@@ -1,0 +1,25 @@
+{
+  "name": "babel-preset-kamlesh",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Kamlesh",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["eslint"]
+  }
+}
